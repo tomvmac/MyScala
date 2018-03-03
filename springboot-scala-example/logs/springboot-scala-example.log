@@ -1,0 +1,577 @@
+2018-03-02 21:08:53.942  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] springboot.scala.example.ExampleApp$     : Starting ExampleApp. on tmac-win10 with PID 10772 (C:\projects\springboot-scala-example\target\classes started by tmac in C:\projects\springboot-scala-example)
+2018-03-02 21:08:53.955  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] springboot.scala.example.ExampleApp$     : No active profile set, falling back to default profiles: default
+2018-03-02 21:08:54.089  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@41b7794: startup date [Fri Mar 02 21:08:54 EST 2018]; root of context hierarchy
+2018-03-02 21:08:56.021  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] org.eclipse.jetty.util.log               : Logging initialized @9465ms to org.eclipse.jetty.util.log.Slf4jLog
+2018-03-02 21:08:56.120  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] e.j.JettyEmbeddedServletContainerFactory : Server initialized with port: 8080
+2018-03-02 21:08:56.123  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] org.eclipse.jetty.server.Server          : jetty-9.4.8.v20171121, build timestamp: 2017-11-21T16:27:37-05:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2018-03-02 21:08:56.271  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2018-03-02 21:08:56.271  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2018-03-02 21:08:56.275  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] org.eclipse.jetty.server.session         : Scavenging every 600000ms
+2018-03-02 21:08:56.280  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2018-03-02 21:08:56.280  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2191 ms
+2018-03-02 21:08:56.416  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-02 21:08:56.419  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-02 21:08:56.419  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-02 21:08:56.419  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-02 21:08:56.419  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-02 21:08:56.426  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@2bc4aa0{/,[file:///C:/Users/tmac/AppData/Local/Temp/jetty-docbase.6571505240339611821.8080/],AVAILABLE}
+2018-03-02 21:08:56.426  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] org.eclipse.jetty.server.Server          : Started @9872ms
+2018-03-02 21:08:57.276  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@41b7794: startup date [Fri Mar 02 21:08:54 EST 2018]; root of context hierarchy
+2018-03-02 21:08:57.409  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public scala.collection.immutable.Map<java.lang.String, java.lang.Object> springboot.scala.example.controller.ExampleController.example()
+2018-03-02 21:08:57.415  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[GET],produces=[application/json || application/xml]}" onto public springboot.scala.example.api.User springboot.scala.example.controller.UserController.get(java.lang.String)
+2018-03-02 21:08:57.415  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[PUT || POST],consumes=[application/json || application/xml],produces=[application/json || application/xml]}" onto public java.lang.String springboot.scala.example.controller.UserController.put(springboot.scala.example.api.User)
+2018-03-02 21:08:57.418  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-02 21:08:57.419  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-02 21:08:57.466  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:08:57.466  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:08:57.521  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:08:57.797  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-02 21:08:57.816  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] o.e.j.s.h.ContextHandler.application     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-02 21:08:57.816  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-02 21:08:57.831  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2018-03-02 21:08:57.898  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] o.e.jetty.server.AbstractConnector       : Started ServerConnector@38a94567{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2018-03-02 21:08:57.903  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] .s.b.c.e.j.JettyEmbeddedServletContainer : Jetty started on port(s) 8080 (http/1.1)
+2018-03-02 21:08:57.919  INFO 10772 --- [springboot.scala.example.ExampleApp.main()] springboot.scala.example.ExampleApp$     : Started ExampleApp. in 4.459 seconds (JVM running for 11.365)
+2018-03-02 21:08:58.394  INFO 10772 --- [Thread-11] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@41b7794: startup date [Fri Mar 02 21:08:54 EST 2018]; root of context hierarchy
+2018-03-02 21:08:58.397  INFO 10772 --- [Thread-11] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-02 21:08:58.410  INFO 10772 --- [Thread-11] o.e.jetty.server.AbstractConnector       : Stopped ServerConnector@38a94567{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2018-03-02 21:08:58.411  INFO 10772 --- [Thread-11] org.eclipse.jetty.server.session         : Stopped scavenging
+2018-03-02 21:08:58.413  INFO 10772 --- [Thread-11] o.e.j.s.h.ContextHandler.application     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2018-03-02 21:08:58.415  INFO 10772 --- [Thread-11] o.e.jetty.server.handler.ContextHandler  : Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@2bc4aa0{/,[file:///C:/Users/tmac/AppData/Local/Temp/jetty-docbase.6571505240339611821.8080/],UNAVAILABLE}
+2018-03-02 21:09:50.946  INFO 6148 --- [main] springboot.scala.example.ExampleApp$     : Starting ExampleApp. on tmac-win10 with PID 6148 (C:\projects\springboot-scala-example\target\classes started by tmac in C:\projects\springboot-scala-example)
+2018-03-02 21:09:50.955  INFO 6148 --- [main] springboot.scala.example.ExampleApp$     : No active profile set, falling back to default profiles: default
+2018-03-02 21:09:51.079  INFO 6148 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ab62fc9: startup date [Fri Mar 02 21:09:51 EST 2018]; root of context hierarchy
+2018-03-02 21:09:52.701  INFO 6148 --- [main] org.eclipse.jetty.util.log               : Logging initialized @8290ms to org.eclipse.jetty.util.log.Slf4jLog
+2018-03-02 21:09:52.950  INFO 6148 --- [main] e.j.JettyEmbeddedServletContainerFactory : Server initialized with port: 8080
+2018-03-02 21:09:52.953  INFO 6148 --- [main] org.eclipse.jetty.server.Server          : jetty-9.4.8.v20171121, build timestamp: 2017-11-21T16:27:37-05:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2018-03-02 21:09:53.146  INFO 6148 --- [main] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2018-03-02 21:09:53.147  INFO 6148 --- [main] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2018-03-02 21:09:53.152  INFO 6148 --- [main] org.eclipse.jetty.server.session         : Scavenging every 600000ms
+2018-03-02 21:09:53.174  INFO 6148 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2018-03-02 21:09:53.175  INFO 6148 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2100 ms
+2018-03-02 21:09:53.431  INFO 6148 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-02 21:09:53.437  INFO 6148 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-02 21:09:53.439  INFO 6148 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-02 21:09:53.439  INFO 6148 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-02 21:09:53.439  INFO 6148 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-02 21:09:53.446  INFO 6148 --- [main] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@6d6da6e7{/,[file:///C:/Users/tmac/AppData/Local/Temp/jetty-docbase.6134265650143758017.8080/],AVAILABLE}
+2018-03-02 21:09:53.446  INFO 6148 --- [main] org.eclipse.jetty.server.Server          : Started @9036ms
+2018-03-02 21:09:54.524  INFO 6148 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ab62fc9: startup date [Fri Mar 02 21:09:51 EST 2018]; root of context hierarchy
+2018-03-02 21:09:54.667  INFO 6148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public scala.collection.immutable.Map<java.lang.String, java.lang.Object> springboot.scala.example.controller.ExampleController.example()
+2018-03-02 21:09:54.671  INFO 6148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[GET],produces=[application/json || application/xml]}" onto public springboot.scala.example.api.User springboot.scala.example.controller.UserController.get(java.lang.String)
+2018-03-02 21:09:54.671  INFO 6148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[PUT || POST],consumes=[application/json || application/xml],produces=[application/json || application/xml]}" onto public java.lang.String springboot.scala.example.controller.UserController.put(springboot.scala.example.api.User)
+2018-03-02 21:09:54.674  INFO 6148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-02 21:09:54.674  INFO 6148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-02 21:09:54.719  INFO 6148 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:09:54.720  INFO 6148 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:09:54.785  INFO 6148 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:09:55.112  INFO 6148 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-02 21:09:55.131  INFO 6148 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-02 21:09:55.132  INFO 6148 --- [main] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-02 21:09:55.151  INFO 6148 --- [main] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2018-03-02 21:09:55.197  INFO 6148 --- [main] o.e.jetty.server.AbstractConnector       : Started ServerConnector@4d8a0e55{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2018-03-02 21:09:55.199  INFO 6148 --- [main] .s.b.c.e.j.JettyEmbeddedServletContainer : Jetty started on port(s) 8080 (http/1.1)
+2018-03-02 21:09:55.205  INFO 6148 --- [main] springboot.scala.example.ExampleApp$     : Started ExampleApp. in 4.984 seconds (JVM running for 10.795)
+2018-03-02 21:12:08.342  INFO 13184 --- [main] springboot.scala.example.ExampleApp$     : Starting ExampleApp. on tmac-win10 with PID 13184 (C:\projects\springboot-scala-example\target\classes started by tmac in C:\projects\springboot-scala-example)
+2018-03-02 21:12:08.349  INFO 13184 --- [main] springboot.scala.example.ExampleApp$     : No active profile set, falling back to default profiles: default
+2018-03-02 21:12:08.417  INFO 13184 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@78ecb1a2: startup date [Fri Mar 02 21:12:08 EST 2018]; root of context hierarchy
+2018-03-02 21:12:09.906  INFO 13184 --- [main] org.eclipse.jetty.util.log               : Logging initialized @11465ms to org.eclipse.jetty.util.log.Slf4jLog
+2018-03-02 21:12:10.034  INFO 13184 --- [main] e.j.JettyEmbeddedServletContainerFactory : Server initialized with port: 8080
+2018-03-02 21:12:10.036  INFO 13184 --- [main] org.eclipse.jetty.server.Server          : jetty-9.4.8.v20171121, build timestamp: 2017-11-21T16:27:37-05:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2018-03-02 21:12:10.213  INFO 13184 --- [main] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2018-03-02 21:12:10.213  INFO 13184 --- [main] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2018-03-02 21:12:10.218  INFO 13184 --- [main] org.eclipse.jetty.server.session         : Scavenging every 600000ms
+2018-03-02 21:12:10.229  INFO 13184 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2018-03-02 21:12:10.230  INFO 13184 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1817 ms
+2018-03-02 21:12:10.405  INFO 13184 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-02 21:12:10.409  INFO 13184 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-02 21:12:10.411  INFO 13184 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-02 21:12:10.412  INFO 13184 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-02 21:12:10.412  INFO 13184 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-02 21:12:10.430  INFO 13184 --- [main] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@202202f7{/,[file:///C:/Users/tmac/AppData/Local/Temp/jetty-docbase.2776297822547207044.8080/],AVAILABLE}
+2018-03-02 21:12:10.431  INFO 13184 --- [main] org.eclipse.jetty.server.Server          : Started @11991ms
+2018-03-02 21:12:11.525  INFO 13184 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@78ecb1a2: startup date [Fri Mar 02 21:12:08 EST 2018]; root of context hierarchy
+2018-03-02 21:12:11.653  INFO 13184 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public scala.collection.immutable.Map<java.lang.String, java.lang.Object> springboot.scala.example.controller.ExampleController.example()
+2018-03-02 21:12:11.659  INFO 13184 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[GET],produces=[application/json || application/xml]}" onto public springboot.scala.example.api.User springboot.scala.example.controller.UserController.get(java.lang.String)
+2018-03-02 21:12:11.660  INFO 13184 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[PUT || POST],consumes=[application/json || application/xml],produces=[application/json || application/xml]}" onto public java.lang.String springboot.scala.example.controller.UserController.put(springboot.scala.example.api.User)
+2018-03-02 21:12:11.662  INFO 13184 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-02 21:12:11.663  INFO 13184 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-02 21:12:11.702  INFO 13184 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:12:11.702  INFO 13184 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:12:11.761  INFO 13184 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:12:12.054  INFO 13184 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-02 21:12:12.076  INFO 13184 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-02 21:12:12.077  INFO 13184 --- [main] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-02 21:12:12.094  INFO 13184 --- [main] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-03-02 21:12:12.139  INFO 13184 --- [main] o.e.jetty.server.AbstractConnector       : Started ServerConnector@17a7a81a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2018-03-02 21:12:12.140  INFO 13184 --- [main] .s.b.c.e.j.JettyEmbeddedServletContainer : Jetty started on port(s) 8080 (http/1.1)
+2018-03-02 21:12:12.145  INFO 13184 --- [main] springboot.scala.example.ExampleApp$     : Started ExampleApp. in 4.22 seconds (JVM running for 13.705)
+2018-03-02 21:19:15.998  INFO 11568 --- [main] springboot.scala.example.ExampleApp$     : Starting ExampleApp. on tmac-win10 with PID 11568 (C:\projects\springboot-scala-example\target\classes started by tmac in C:\projects\springboot-scala-example)
+2018-03-02 21:19:16.004  INFO 11568 --- [main] springboot.scala.example.ExampleApp$     : No active profile set, falling back to default profiles: default
+2018-03-02 21:19:16.084  INFO 11568 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@37aef63d: startup date [Fri Mar 02 21:19:16 EST 2018]; root of context hierarchy
+2018-03-02 21:19:17.683  INFO 11568 --- [main] org.eclipse.jetty.util.log               : Logging initialized @11580ms to org.eclipse.jetty.util.log.Slf4jLog
+2018-03-02 21:19:17.794  INFO 11568 --- [main] e.j.JettyEmbeddedServletContainerFactory : Server initialized with port: 8080
+2018-03-02 21:19:17.797  INFO 11568 --- [main] org.eclipse.jetty.server.Server          : jetty-9.4.8.v20171121, build timestamp: 2017-11-21T16:27:37-05:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2018-03-02 21:19:17.986  INFO 11568 --- [main] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2018-03-02 21:19:17.986  INFO 11568 --- [main] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2018-03-02 21:19:17.989  INFO 11568 --- [main] org.eclipse.jetty.server.session         : Scavenging every 600000ms
+2018-03-02 21:19:17.997  INFO 11568 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2018-03-02 21:19:17.997  INFO 11568 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1919 ms
+2018-03-02 21:19:18.184  INFO 11568 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-02 21:19:18.188  INFO 11568 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-02 21:19:18.190  INFO 11568 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-02 21:19:18.191  INFO 11568 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-02 21:19:18.192  INFO 11568 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-02 21:19:18.215  INFO 11568 --- [main] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@21af5052{/,[file:///C:/Users/tmac/AppData/Local/Temp/jetty-docbase.787542883191884150.8080/],AVAILABLE}
+2018-03-02 21:19:18.216  INFO 11568 --- [main] org.eclipse.jetty.server.Server          : Started @12113ms
+2018-03-02 21:19:19.899  INFO 11568 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@37aef63d: startup date [Fri Mar 02 21:19:16 EST 2018]; root of context hierarchy
+2018-03-02 21:19:20.124  INFO 11568 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public scala.collection.immutable.Map<java.lang.String, java.lang.Object> springboot.scala.example.controller.ExampleController.example()
+2018-03-02 21:19:20.127  INFO 11568 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String springboot.scala.example.controller.ExampleController.sayHello()
+2018-03-02 21:19:20.130  INFO 11568 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[GET],produces=[application/json || application/xml]}" onto public springboot.scala.example.api.User springboot.scala.example.controller.UserController.get(java.lang.String)
+2018-03-02 21:19:20.131  INFO 11568 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[PUT || POST],consumes=[application/json || application/xml],produces=[application/json || application/xml]}" onto public java.lang.String springboot.scala.example.controller.UserController.put(springboot.scala.example.api.User)
+2018-03-02 21:19:20.136  INFO 11568 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-02 21:19:20.137  INFO 11568 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-02 21:19:20.253  INFO 11568 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:19:20.256  INFO 11568 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:19:20.357  INFO 11568 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:19:20.675  INFO 11568 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-02 21:19:20.693  INFO 11568 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-02 21:19:20.693  INFO 11568 --- [main] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-02 21:19:20.712  INFO 11568 --- [main] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-03-02 21:19:20.757  INFO 11568 --- [main] o.e.jetty.server.AbstractConnector       : Started ServerConnector@731c025d{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2018-03-02 21:19:20.759  INFO 11568 --- [main] .s.b.c.e.j.JettyEmbeddedServletContainer : Jetty started on port(s) 8080 (http/1.1)
+2018-03-02 21:19:20.765  INFO 11568 --- [main] springboot.scala.example.ExampleApp$     : Started ExampleApp. in 5.157 seconds (JVM running for 14.662)
+2018-03-02 21:26:34.023  INFO 10036 --- [main] springboot.scala.example.ExampleApp$     : Starting ExampleApp. on tmac-win10 with PID 10036 (C:\projects\springboot-scala-example\target\classes started by tmac in C:\projects\springboot-scala-example)
+2018-03-02 21:26:34.028  INFO 10036 --- [main] springboot.scala.example.ExampleApp$     : No active profile set, falling back to default profiles: default
+2018-03-02 21:26:34.121  INFO 10036 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@572a53f: startup date [Fri Mar 02 21:26:34 EST 2018]; root of context hierarchy
+2018-03-02 21:26:35.575  INFO 10036 --- [main] org.eclipse.jetty.util.log               : Logging initialized @11396ms to org.eclipse.jetty.util.log.Slf4jLog
+2018-03-02 21:26:35.704  INFO 10036 --- [main] e.j.JettyEmbeddedServletContainerFactory : Server initialized with port: 8080
+2018-03-02 21:26:35.709  INFO 10036 --- [main] org.eclipse.jetty.server.Server          : jetty-9.4.8.v20171121, build timestamp: 2017-11-21T16:27:37-05:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2018-03-02 21:26:35.903  INFO 10036 --- [main] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2018-03-02 21:26:35.903  INFO 10036 --- [main] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2018-03-02 21:26:35.911  INFO 10036 --- [main] org.eclipse.jetty.server.session         : Scavenging every 600000ms
+2018-03-02 21:26:35.922  INFO 10036 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2018-03-02 21:26:35.923  INFO 10036 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1812 ms
+2018-03-02 21:26:36.148  INFO 10036 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-02 21:26:36.168  INFO 10036 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-02 21:26:36.171  INFO 10036 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-02 21:26:36.173  INFO 10036 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-02 21:26:36.175  INFO 10036 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-02 21:26:36.196  INFO 10036 --- [main] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@3650934d{/,[file:///C:/Users/tmac/AppData/Local/Temp/jetty-docbase.2336904213863440214.8080/],AVAILABLE}
+2018-03-02 21:26:36.200  INFO 10036 --- [main] org.eclipse.jetty.server.Server          : Started @12020ms
+2018-03-02 21:26:37.308  INFO 10036 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@572a53f: startup date [Fri Mar 02 21:26:34 EST 2018]; root of context hierarchy
+2018-03-02 21:26:37.455  INFO 10036 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tupleDoubleScore],methods=[GET]}" onto public java.lang.Object springboot.scala.example.controller.ExampleController.getTupleDoubleScore()
+2018-03-02 21:26:37.457  INFO 10036 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public scala.collection.immutable.Map<java.lang.String, java.lang.Object> springboot.scala.example.controller.ExampleController.example()
+2018-03-02 21:26:37.457  INFO 10036 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String springboot.scala.example.controller.ExampleController.sayHello()
+2018-03-02 21:26:37.460  INFO 10036 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[GET],produces=[application/json || application/xml]}" onto public springboot.scala.example.api.User springboot.scala.example.controller.UserController.get(java.lang.String)
+2018-03-02 21:26:37.461  INFO 10036 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[PUT || POST],consumes=[application/json || application/xml],produces=[application/json || application/xml]}" onto public java.lang.String springboot.scala.example.controller.UserController.put(springboot.scala.example.api.User)
+2018-03-02 21:26:37.464  INFO 10036 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-02 21:26:37.464  INFO 10036 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-02 21:26:37.504  INFO 10036 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:26:37.504  INFO 10036 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:26:37.570  INFO 10036 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:26:37.887  INFO 10036 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-02 21:26:37.903  INFO 10036 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-02 21:26:37.904  INFO 10036 --- [main] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-02 21:26:37.923  INFO 10036 --- [main] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-03-02 21:26:37.974  INFO 10036 --- [main] o.e.jetty.server.AbstractConnector       : Started ServerConnector@28b65a1{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2018-03-02 21:26:37.974  INFO 10036 --- [main] .s.b.c.e.j.JettyEmbeddedServletContainer : Jetty started on port(s) 8080 (http/1.1)
+2018-03-02 21:26:37.979  INFO 10036 --- [main] springboot.scala.example.ExampleApp$     : Started ExampleApp. in 4.3 seconds (JVM running for 13.801)
+2018-03-02 21:36:14.867  INFO 3616 --- [restartedMain] springboot.scala.example.ExampleApp$     : Starting ExampleApp. on tmac-win10 with PID 3616 (C:\projects\springboot-scala-example\target\classes started by tmac in C:\projects\springboot-scala-example)
+2018-03-02 21:36:14.872  INFO 3616 --- [restartedMain] springboot.scala.example.ExampleApp$     : No active profile set, falling back to default profiles: default
+2018-03-02 21:36:14.961  INFO 3616 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@29532f35: startup date [Fri Mar 02 21:36:14 EST 2018]; root of context hierarchy
+2018-03-02 21:36:16.422  INFO 3616 --- [restartedMain] org.eclipse.jetty.util.log               : Logging initialized @2673ms to org.eclipse.jetty.util.log.Slf4jLog
+2018-03-02 21:36:16.694  INFO 3616 --- [restartedMain] e.j.JettyEmbeddedServletContainerFactory : Server initialized with port: 8080
+2018-03-02 21:36:16.698  INFO 3616 --- [restartedMain] org.eclipse.jetty.server.Server          : jetty-9.4.8.v20171121, build timestamp: 2017-11-21T16:27:37-05:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2018-03-02 21:36:16.879  INFO 3616 --- [restartedMain] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2018-03-02 21:36:16.879  INFO 3616 --- [restartedMain] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2018-03-02 21:36:16.884  INFO 3616 --- [restartedMain] org.eclipse.jetty.server.session         : Scavenging every 660000ms
+2018-03-02 21:36:16.893  INFO 3616 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2018-03-02 21:36:16.893  INFO 3616 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1935 ms
+2018-03-02 21:36:17.092  INFO 3616 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-02 21:36:17.096  INFO 3616 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-02 21:36:17.098  INFO 3616 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-02 21:36:17.098  INFO 3616 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-02 21:36:17.100  INFO 3616 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-02 21:36:17.116  INFO 3616 --- [restartedMain] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@7dea47c2{/,[file:///C:/Users/tmac/AppData/Local/Temp/jetty-docbase.4368900895431868450.8080/],AVAILABLE}
+2018-03-02 21:36:17.117  INFO 3616 --- [restartedMain] org.eclipse.jetty.server.Server          : Started @3369ms
+2018-03-02 21:36:17.861  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@29532f35: startup date [Fri Mar 02 21:36:14 EST 2018]; root of context hierarchy
+2018-03-02 21:36:17.937  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String springboot.scala.example.controller.ExampleController.sayHello()
+2018-03-02 21:36:17.940  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public scala.collection.immutable.Map<java.lang.String, java.lang.Object> springboot.scala.example.controller.ExampleController.example()
+2018-03-02 21:36:17.940  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tupleDoubleScore],methods=[GET]}" onto public java.lang.Object springboot.scala.example.controller.ExampleController.getTupleDoubleScore()
+2018-03-02 21:36:17.944  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[GET],produces=[application/json || application/xml]}" onto public springboot.scala.example.api.User springboot.scala.example.controller.UserController.get(java.lang.String)
+2018-03-02 21:36:17.944  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[PUT || POST],consumes=[application/json || application/xml],produces=[application/json || application/xml]}" onto public java.lang.String springboot.scala.example.controller.UserController.put(springboot.scala.example.api.User)
+2018-03-02 21:36:17.948  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-02 21:36:17.950  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-02 21:36:17.980  INFO 3616 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:36:17.981  INFO 3616 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:36:18.046  INFO 3616 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:36:18.321  INFO 3616 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-02 21:36:18.395  INFO 3616 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-02 21:36:18.424  INFO 3616 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-02 21:36:18.425  INFO 3616 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-02 21:36:18.445  INFO 3616 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2018-03-02 21:36:18.594  INFO 3616 --- [restartedMain] o.e.jetty.server.AbstractConnector       : Started ServerConnector@6491215a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2018-03-02 21:36:18.598  INFO 3616 --- [restartedMain] .s.b.c.e.j.JettyEmbeddedServletContainer : Jetty started on port(s) 8080 (http/1.1)
+2018-03-02 21:36:18.620  INFO 3616 --- [restartedMain] springboot.scala.example.ExampleApp$     : Started ExampleApp. in 4.089 seconds (JVM running for 4.872)
+2018-03-02 21:37:01.239  INFO 3616 --- [Thread-15] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@29532f35: startup date [Fri Mar 02 21:36:14 EST 2018]; root of context hierarchy
+2018-03-02 21:37:01.240  INFO 3616 --- [Thread-15] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-02 21:37:01.247  INFO 3616 --- [Thread-15] o.e.jetty.server.AbstractConnector       : Stopped ServerConnector@6491215a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2018-03-02 21:37:01.248  INFO 3616 --- [Thread-15] org.eclipse.jetty.server.session         : Stopped scavenging
+2018-03-02 21:37:01.251  INFO 3616 --- [Thread-15] o.e.j.s.h.ContextHandler.application     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2018-03-02 21:37:01.251  INFO 3616 --- [Thread-15] o.e.jetty.server.handler.ContextHandler  : Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@7dea47c2{/,[file:///C:/Users/tmac/AppData/Local/Temp/jetty-docbase.4368900895431868450.8080/],UNAVAILABLE}
+2018-03-02 21:37:01.484  INFO 3616 --- [restartedMain] springboot.scala.example.ExampleApp$     : Starting ExampleApp. on tmac-win10 with PID 3616 (C:\projects\springboot-scala-example\target\classes started by tmac in C:\projects\springboot-scala-example)
+2018-03-02 21:37:01.486  INFO 3616 --- [restartedMain] springboot.scala.example.ExampleApp$     : No active profile set, falling back to default profiles: default
+2018-03-02 21:37:01.490  INFO 3616 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@66390022: startup date [Fri Mar 02 21:37:01 EST 2018]; root of context hierarchy
+2018-03-02 21:37:02.366  INFO 3616 --- [restartedMain] e.j.JettyEmbeddedServletContainerFactory : Server initialized with port: 8080
+2018-03-02 21:37:02.367  INFO 3616 --- [restartedMain] org.eclipse.jetty.server.Server          : jetty-9.4.8.v20171121, build timestamp: 2017-11-21T16:27:37-05:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2018-03-02 21:37:02.372  INFO 3616 --- [restartedMain] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2018-03-02 21:37:02.372  INFO 3616 --- [restartedMain] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2018-03-02 21:37:02.372  INFO 3616 --- [restartedMain] org.eclipse.jetty.server.session         : Scavenging every 660000ms
+2018-03-02 21:37:02.374  INFO 3616 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2018-03-02 21:37:02.374  INFO 3616 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 884 ms
+2018-03-02 21:37:02.403  INFO 3616 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-02 21:37:02.404  INFO 3616 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-02 21:37:02.404  INFO 3616 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-02 21:37:02.405  INFO 3616 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-02 21:37:02.405  INFO 3616 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-02 21:37:02.405  INFO 3616 --- [restartedMain] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@6fa46adc{/,[file:///C:/Users/tmac/AppData/Local/Temp/jetty-docbase.8614402384710087406.8080/],AVAILABLE}
+2018-03-02 21:37:02.409  INFO 3616 --- [restartedMain] org.eclipse.jetty.server.Server          : Started @48661ms
+2018-03-02 21:37:02.614  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@66390022: startup date [Fri Mar 02 21:37:01 EST 2018]; root of context hierarchy
+2018-03-02 21:37:02.686  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String springboot.scala.example.controller.ExampleController.sayHello()
+2018-03-02 21:37:02.686  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public scala.collection.immutable.Map<java.lang.String, java.lang.Object> springboot.scala.example.controller.ExampleController.example()
+2018-03-02 21:37:02.688  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tupleDoubleScore],methods=[GET]}" onto public java.lang.Object springboot.scala.example.controller.ExampleController.getTupleDoubleScore()
+2018-03-02 21:37:02.690  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[GET],produces=[application/json || application/xml]}" onto public springboot.scala.example.api.User springboot.scala.example.controller.UserController.get(java.lang.String)
+2018-03-02 21:37:02.690  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[PUT || POST],consumes=[application/json || application/xml],produces=[application/json || application/xml]}" onto public java.lang.String springboot.scala.example.controller.UserController.put(springboot.scala.example.api.User)
+2018-03-02 21:37:02.692  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-02 21:37:02.693  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-02 21:37:02.701  INFO 3616 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:37:02.702  INFO 3616 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:37:02.732  INFO 3616 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:37:02.793  INFO 3616 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-02 21:37:02.860  INFO 3616 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-02 21:37:02.885  INFO 3616 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-02 21:37:02.885  INFO 3616 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-02 21:37:02.897  INFO 3616 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 3 ms
+2018-03-02 21:37:02.935  INFO 3616 --- [restartedMain] o.e.jetty.server.AbstractConnector       : Started ServerConnector@6157c1cc{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2018-03-02 21:37:02.936  INFO 3616 --- [restartedMain] .s.b.c.e.j.JettyEmbeddedServletContainer : Jetty started on port(s) 8080 (http/1.1)
+2018-03-02 21:37:02.939  INFO 3616 --- [restartedMain] springboot.scala.example.ExampleApp$     : Started ExampleApp. in 1.537 seconds (JVM running for 49.191)
+2018-03-02 21:37:08.333  INFO 3616 --- [Thread-18] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@66390022: startup date [Fri Mar 02 21:37:01 EST 2018]; root of context hierarchy
+2018-03-02 21:37:08.338  INFO 3616 --- [Thread-18] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-02 21:37:08.341  INFO 3616 --- [Thread-18] o.e.jetty.server.AbstractConnector       : Stopped ServerConnector@6157c1cc{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2018-03-02 21:37:08.342  INFO 3616 --- [Thread-18] org.eclipse.jetty.server.session         : Stopped scavenging
+2018-03-02 21:37:08.343  INFO 3616 --- [Thread-18] o.e.j.s.h.ContextHandler.application     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2018-03-02 21:37:08.344  INFO 3616 --- [Thread-18] o.e.jetty.server.handler.ContextHandler  : Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@6fa46adc{/,[file:///C:/Users/tmac/AppData/Local/Temp/jetty-docbase.8614402384710087406.8080/],UNAVAILABLE}
+2018-03-02 21:37:08.569  INFO 3616 --- [restartedMain] springboot.scala.example.ExampleApp$     : Starting ExampleApp. on tmac-win10 with PID 3616 (C:\projects\springboot-scala-example\target\classes started by tmac in C:\projects\springboot-scala-example)
+2018-03-02 21:37:08.570  INFO 3616 --- [restartedMain] springboot.scala.example.ExampleApp$     : No active profile set, falling back to default profiles: default
+2018-03-02 21:37:08.575  INFO 3616 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5cc752da: startup date [Fri Mar 02 21:37:08 EST 2018]; root of context hierarchy
+2018-03-02 21:37:09.156  INFO 3616 --- [restartedMain] e.j.JettyEmbeddedServletContainerFactory : Server initialized with port: 8080
+2018-03-02 21:37:09.156  INFO 3616 --- [restartedMain] org.eclipse.jetty.server.Server          : jetty-9.4.8.v20171121, build timestamp: 2017-11-21T16:27:37-05:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2018-03-02 21:37:09.161  INFO 3616 --- [restartedMain] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2018-03-02 21:37:09.162  INFO 3616 --- [restartedMain] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2018-03-02 21:37:09.162  INFO 3616 --- [restartedMain] org.eclipse.jetty.server.session         : Scavenging every 660000ms
+2018-03-02 21:37:09.163  INFO 3616 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2018-03-02 21:37:09.163  INFO 3616 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 588 ms
+2018-03-02 21:37:09.196  INFO 3616 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-02 21:37:09.197  INFO 3616 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-02 21:37:09.201  INFO 3616 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-02 21:37:09.202  INFO 3616 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-02 21:37:09.202  INFO 3616 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-02 21:37:09.202  INFO 3616 --- [restartedMain] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@782a54e3{/,[file:///C:/Users/tmac/AppData/Local/Temp/jetty-docbase.9129412759875476220.8080/],AVAILABLE}
+2018-03-02 21:37:09.205  INFO 3616 --- [restartedMain] org.eclipse.jetty.server.Server          : Started @55457ms
+2018-03-02 21:37:09.304  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5cc752da: startup date [Fri Mar 02 21:37:08 EST 2018]; root of context hierarchy
+2018-03-02 21:37:09.311  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String springboot.scala.example.controller.ExampleController.sayHello()
+2018-03-02 21:37:09.311  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public scala.collection.immutable.Map<java.lang.String, java.lang.Object> springboot.scala.example.controller.ExampleController.example()
+2018-03-02 21:37:09.312  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tupleDoubleScore],methods=[GET]}" onto public java.lang.Object springboot.scala.example.controller.ExampleController.getTupleDoubleScore()
+2018-03-02 21:37:09.313  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[GET],produces=[application/json || application/xml]}" onto public springboot.scala.example.api.User springboot.scala.example.controller.UserController.get(java.lang.String)
+2018-03-02 21:37:09.313  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[PUT || POST],consumes=[application/json || application/xml],produces=[application/json || application/xml]}" onto public java.lang.String springboot.scala.example.controller.UserController.put(springboot.scala.example.api.User)
+2018-03-02 21:37:09.317  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-02 21:37:09.318  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-02 21:37:09.324  INFO 3616 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:37:09.325  INFO 3616 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:37:09.335  INFO 3616 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:37:09.361  INFO 3616 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-02 21:37:09.432  INFO 3616 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-02 21:37:09.444  INFO 3616 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-02 21:37:09.445  INFO 3616 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-02 21:37:09.512  INFO 3616 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 2 ms
+2018-03-02 21:37:09.543  INFO 3616 --- [restartedMain] o.e.jetty.server.AbstractConnector       : Started ServerConnector@51df8d8c{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2018-03-02 21:37:09.544  INFO 3616 --- [restartedMain] .s.b.c.e.j.JettyEmbeddedServletContainer : Jetty started on port(s) 8080 (http/1.1)
+2018-03-02 21:37:09.545  INFO 3616 --- [restartedMain] springboot.scala.example.ExampleApp$     : Started ExampleApp. in 1.068 seconds (JVM running for 55.797)
+2018-03-02 21:37:29.021  INFO 3616 --- [Thread-31] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5cc752da: startup date [Fri Mar 02 21:37:08 EST 2018]; root of context hierarchy
+2018-03-02 21:37:29.024  INFO 3616 --- [Thread-31] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-02 21:37:29.031  INFO 3616 --- [Thread-31] o.e.jetty.server.AbstractConnector       : Stopped ServerConnector@51df8d8c{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2018-03-02 21:37:29.034  INFO 3616 --- [Thread-31] org.eclipse.jetty.server.session         : Stopped scavenging
+2018-03-02 21:37:29.036  INFO 3616 --- [Thread-31] o.e.j.s.h.ContextHandler.application     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2018-03-02 21:37:29.036  INFO 3616 --- [Thread-31] o.e.jetty.server.handler.ContextHandler  : Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@782a54e3{/,[file:///C:/Users/tmac/AppData/Local/Temp/jetty-docbase.9129412759875476220.8080/],UNAVAILABLE}
+2018-03-02 21:37:29.435  INFO 3616 --- [restartedMain] springboot.scala.example.ExampleApp$     : Starting ExampleApp. on tmac-win10 with PID 3616 (C:\projects\springboot-scala-example\target\classes started by tmac in C:\projects\springboot-scala-example)
+2018-03-02 21:37:29.447  INFO 3616 --- [restartedMain] springboot.scala.example.ExampleApp$     : No active profile set, falling back to default profiles: default
+2018-03-02 21:37:29.451  INFO 3616 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5798aa47: startup date [Fri Mar 02 21:37:29 EST 2018]; root of context hierarchy
+2018-03-02 21:37:30.089  INFO 3616 --- [restartedMain] e.j.JettyEmbeddedServletContainerFactory : Server initialized with port: 8080
+2018-03-02 21:37:30.090  INFO 3616 --- [restartedMain] org.eclipse.jetty.server.Server          : jetty-9.4.8.v20171121, build timestamp: 2017-11-21T16:27:37-05:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2018-03-02 21:37:30.097  INFO 3616 --- [restartedMain] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2018-03-02 21:37:30.097  INFO 3616 --- [restartedMain] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2018-03-02 21:37:30.097  INFO 3616 --- [restartedMain] org.eclipse.jetty.server.session         : Scavenging every 600000ms
+2018-03-02 21:37:30.098  INFO 3616 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2018-03-02 21:37:30.098  INFO 3616 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 647 ms
+2018-03-02 21:37:30.147  INFO 3616 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-02 21:37:30.147  INFO 3616 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-02 21:37:30.147  INFO 3616 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-02 21:37:30.147  INFO 3616 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-02 21:37:30.147  INFO 3616 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-02 21:37:30.149  INFO 3616 --- [restartedMain] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@5b8b5ae1{/,[file:///C:/Users/tmac/AppData/Local/Temp/jetty-docbase.4641564385077363835.8080/],AVAILABLE}
+2018-03-02 21:37:30.168  INFO 3616 --- [restartedMain] org.eclipse.jetty.server.Server          : Started @76420ms
+2018-03-02 21:37:30.389  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5798aa47: startup date [Fri Mar 02 21:37:29 EST 2018]; root of context hierarchy
+2018-03-02 21:37:30.416  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String springboot.scala.example.controller.ExampleController.sayHello()
+2018-03-02 21:37:30.417  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public scala.collection.immutable.Map<java.lang.String, java.lang.Object> springboot.scala.example.controller.ExampleController.example()
+2018-03-02 21:37:30.417  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tupleDoubleScore],methods=[GET]}" onto public java.lang.Object springboot.scala.example.controller.ExampleController.getTupleDoubleScore()
+2018-03-02 21:37:30.418  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[GET],produces=[application/json || application/xml]}" onto public springboot.scala.example.api.User springboot.scala.example.controller.UserController.get(java.lang.String)
+2018-03-02 21:37:30.419  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[PUT || POST],consumes=[application/json || application/xml],produces=[application/json || application/xml]}" onto public java.lang.String springboot.scala.example.controller.UserController.put(springboot.scala.example.api.User)
+2018-03-02 21:37:30.443  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-02 21:37:30.443  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-02 21:37:30.449  INFO 3616 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:37:30.450  INFO 3616 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:37:30.465  INFO 3616 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:37:30.504  INFO 3616 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-02 21:37:30.546  INFO 3616 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-02 21:37:30.560  INFO 3616 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-02 21:37:30.561  INFO 3616 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-02 21:37:30.574  INFO 3616 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 1 ms
+2018-03-02 21:37:30.580  INFO 3616 --- [restartedMain] o.e.jetty.server.AbstractConnector       : Started ServerConnector@c75d49{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2018-03-02 21:37:30.580  INFO 3616 --- [restartedMain] .s.b.c.e.j.JettyEmbeddedServletContainer : Jetty started on port(s) 8080 (http/1.1)
+2018-03-02 21:37:30.581  INFO 3616 --- [restartedMain] springboot.scala.example.ExampleApp$     : Started ExampleApp. in 1.425 seconds (JVM running for 76.833)
+2018-03-02 21:39:30.066  INFO 3616 --- [Thread-45] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5798aa47: startup date [Fri Mar 02 21:37:29 EST 2018]; root of context hierarchy
+2018-03-02 21:39:30.070  INFO 3616 --- [Thread-45] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-02 21:39:30.087  INFO 3616 --- [Thread-45] o.e.jetty.server.AbstractConnector       : Stopped ServerConnector@c75d49{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2018-03-02 21:39:30.115  INFO 3616 --- [Thread-45] org.eclipse.jetty.server.session         : Stopped scavenging
+2018-03-02 21:39:30.117  INFO 3616 --- [Thread-45] o.e.j.s.h.ContextHandler.application     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2018-03-02 21:39:30.117  INFO 3616 --- [Thread-45] o.e.jetty.server.handler.ContextHandler  : Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@5b8b5ae1{/,[file:///C:/Users/tmac/AppData/Local/Temp/jetty-docbase.4641564385077363835.8080/],UNAVAILABLE}
+2018-03-02 21:39:30.482  INFO 3616 --- [restartedMain] springboot.scala.example.ExampleApp$     : Starting ExampleApp. on tmac-win10 with PID 3616 (C:\projects\springboot-scala-example\target\classes started by tmac in C:\projects\springboot-scala-example)
+2018-03-02 21:39:30.483  INFO 3616 --- [restartedMain] springboot.scala.example.ExampleApp$     : No active profile set, falling back to default profiles: default
+2018-03-02 21:39:30.495  INFO 3616 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@749d026b: startup date [Fri Mar 02 21:39:30 EST 2018]; root of context hierarchy
+2018-03-02 21:39:31.237  INFO 3616 --- [restartedMain] e.j.JettyEmbeddedServletContainerFactory : Server initialized with port: 8080
+2018-03-02 21:39:31.238  INFO 3616 --- [restartedMain] org.eclipse.jetty.server.Server          : jetty-9.4.8.v20171121, build timestamp: 2017-11-21T16:27:37-05:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2018-03-02 21:39:31.241  INFO 3616 --- [restartedMain] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2018-03-02 21:39:31.241  INFO 3616 --- [restartedMain] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2018-03-02 21:39:31.241  INFO 3616 --- [restartedMain] org.eclipse.jetty.server.session         : Scavenging every 600000ms
+2018-03-02 21:39:31.242  INFO 3616 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2018-03-02 21:39:31.242  INFO 3616 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 747 ms
+2018-03-02 21:39:31.275  INFO 3616 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-02 21:39:31.302  INFO 3616 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-02 21:39:31.303  INFO 3616 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-02 21:39:31.304  INFO 3616 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-02 21:39:31.304  INFO 3616 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-02 21:39:31.304  INFO 3616 --- [restartedMain] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@329b44c7{/,[file:///C:/Users/tmac/AppData/Local/Temp/jetty-docbase.4838476234489320224.8080/],AVAILABLE}
+2018-03-02 21:39:31.305  INFO 3616 --- [restartedMain] org.eclipse.jetty.server.Server          : Started @197557ms
+2018-03-02 21:39:31.552  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@749d026b: startup date [Fri Mar 02 21:39:30 EST 2018]; root of context hierarchy
+2018-03-02 21:39:31.591  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String springboot.scala.example.controller.ExampleController.sayHello()
+2018-03-02 21:39:31.592  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public scala.collection.immutable.Map<java.lang.String, java.lang.Object> springboot.scala.example.controller.ExampleController.example()
+2018-03-02 21:39:31.593  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tupleDoubleScore],methods=[GET]}" onto public java.lang.Object springboot.scala.example.controller.ExampleController.getTupleDoubleScore()
+2018-03-02 21:39:31.594  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[GET],produces=[application/json || application/xml]}" onto public springboot.scala.example.api.User springboot.scala.example.controller.UserController.get(java.lang.String)
+2018-03-02 21:39:31.603  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[PUT || POST],consumes=[application/json || application/xml],produces=[application/json || application/xml]}" onto public java.lang.String springboot.scala.example.controller.UserController.put(springboot.scala.example.api.User)
+2018-03-02 21:39:31.606  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-02 21:39:31.607  INFO 3616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-02 21:39:31.614  INFO 3616 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:39:31.616  INFO 3616 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:39:31.689  INFO 3616 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:39:31.718  INFO 3616 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-02 21:39:31.747  INFO 3616 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-02 21:39:31.751  INFO 3616 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-02 21:39:31.752  INFO 3616 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-02 21:39:31.754  INFO 3616 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 2 ms
+2018-03-02 21:39:31.757  INFO 3616 --- [restartedMain] o.e.jetty.server.AbstractConnector       : Started ServerConnector@2b735e27{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2018-03-02 21:39:31.757  INFO 3616 --- [restartedMain] .s.b.c.e.j.JettyEmbeddedServletContainer : Jetty started on port(s) 8080 (http/1.1)
+2018-03-02 21:39:31.758  INFO 3616 --- [restartedMain] springboot.scala.example.ExampleApp$     : Started ExampleApp. in 1.348 seconds (JVM running for 198.01)
+2018-03-02 21:48:42.884  INFO 5804 --- [restartedMain] springboot.scala.example.ExampleApp$     : Starting ExampleApp. on tmac-win10 with PID 5804 (C:\projects\MyScala\springboot-scala-example\target\classes started by tmac in C:\projects\MyScala\springboot-scala-example)
+2018-03-02 21:48:42.889  INFO 5804 --- [restartedMain] springboot.scala.example.ExampleApp$     : No active profile set, falling back to default profiles: default
+2018-03-02 21:48:42.973  INFO 5804 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70b279e2: startup date [Fri Mar 02 21:48:42 EST 2018]; root of context hierarchy
+2018-03-02 21:48:44.285  INFO 5804 --- [restartedMain] org.eclipse.jetty.util.log               : Logging initialized @2407ms to org.eclipse.jetty.util.log.Slf4jLog
+2018-03-02 21:48:44.516  INFO 5804 --- [restartedMain] e.j.JettyEmbeddedServletContainerFactory : Server initialized with port: 8080
+2018-03-02 21:48:44.519  INFO 5804 --- [restartedMain] org.eclipse.jetty.server.Server          : jetty-9.4.8.v20171121, build timestamp: 2017-11-21T16:27:37-05:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2018-03-02 21:48:44.688  INFO 5804 --- [restartedMain] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2018-03-02 21:48:44.689  INFO 5804 --- [restartedMain] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2018-03-02 21:48:44.693  INFO 5804 --- [restartedMain] org.eclipse.jetty.server.session         : Scavenging every 600000ms
+2018-03-02 21:48:44.702  INFO 5804 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2018-03-02 21:48:44.702  INFO 5804 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1732 ms
+2018-03-02 21:48:44.886  INFO 5804 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-02 21:48:44.890  INFO 5804 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-02 21:48:44.891  INFO 5804 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-02 21:48:44.892  INFO 5804 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-02 21:48:44.893  INFO 5804 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-02 21:48:44.900  INFO 5804 --- [restartedMain] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@279c096a{/,[file:///C:/Users/tmac/AppData/Local/Temp/jetty-docbase.6085644556152450149.8080/],AVAILABLE}
+2018-03-02 21:48:44.900  INFO 5804 --- [restartedMain] org.eclipse.jetty.server.Server          : Started @3023ms
+2018-03-02 21:48:45.561  INFO 5804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70b279e2: startup date [Fri Mar 02 21:48:42 EST 2018]; root of context hierarchy
+2018-03-02 21:48:45.630  INFO 5804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String springboot.scala.example.controller.ExampleController.sayHello()
+2018-03-02 21:48:45.631  INFO 5804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public scala.collection.immutable.Map<java.lang.String, java.lang.Object> springboot.scala.example.controller.ExampleController.example()
+2018-03-02 21:48:45.631  INFO 5804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tupleDoubleScore],methods=[GET]}" onto public java.lang.Object springboot.scala.example.controller.ExampleController.getTupleDoubleScore()
+2018-03-02 21:48:45.635  INFO 5804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[GET],produces=[application/json || application/xml]}" onto public springboot.scala.example.api.User springboot.scala.example.controller.UserController.get(java.lang.String)
+2018-03-02 21:48:45.636  INFO 5804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[PUT || POST],consumes=[application/json || application/xml],produces=[application/json || application/xml]}" onto public java.lang.String springboot.scala.example.controller.UserController.put(springboot.scala.example.api.User)
+2018-03-02 21:48:45.639  INFO 5804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-02 21:48:45.640  INFO 5804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-02 21:48:45.668  INFO 5804 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:48:45.668  INFO 5804 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:48:45.726  INFO 5804 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:48:45.945  WARN 5804 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2018-03-02 21:48:45.984  INFO 5804 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-02 21:48:45.998  INFO 5804 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-02 21:48:45.999  INFO 5804 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-02 21:48:46.014  INFO 5804 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2018-03-02 21:48:46.094  INFO 5804 --- [restartedMain] o.e.jetty.server.AbstractConnector       : Stopped ServerConnector@1dbb8117{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2018-03-02 21:48:46.094  INFO 5804 --- [restartedMain] org.eclipse.jetty.server.session         : Stopped scavenging
+2018-03-02 21:48:46.096  INFO 5804 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2018-03-02 21:48:46.096  INFO 5804 --- [restartedMain] o.e.jetty.server.handler.ContextHandler  : Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@279c096a{/,[file:///C:/Users/tmac/AppData/Local/Temp/jetty-docbase.6085644556152450149.8080/],UNAVAILABLE}
+2018-03-02 21:48:46.100  INFO 5804 --- [restartedMain] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-03-02 21:48:46.104 ERROR 5804 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Embedded servlet container failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2018-03-02 21:48:46.106  INFO 5804 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70b279e2: startup date [Fri Mar 02 21:48:42 EST 2018]; root of context hierarchy
+2018-03-02 21:48:46.108  INFO 5804 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-02 21:50:17.436  INFO 12160 --- [restartedMain] springboot.scala.example.ExampleApp$     : Starting ExampleApp. on tmac-win10 with PID 12160 (C:\projects\MyScala\springboot-scala-example\target\classes started by tmac in C:\projects\MyScala\springboot-scala-example)
+2018-03-02 21:50:17.441  INFO 12160 --- [restartedMain] springboot.scala.example.ExampleApp$     : No active profile set, falling back to default profiles: default
+2018-03-02 21:50:17.515  INFO 12160 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70b279e2: startup date [Fri Mar 02 21:50:17 EST 2018]; root of context hierarchy
+2018-03-02 21:50:18.834  INFO 12160 --- [restartedMain] org.eclipse.jetty.util.log               : Logging initialized @2245ms to org.eclipse.jetty.util.log.Slf4jLog
+2018-03-02 21:50:19.067  INFO 12160 --- [restartedMain] e.j.JettyEmbeddedServletContainerFactory : Server initialized with port: 8080
+2018-03-02 21:50:19.071  INFO 12160 --- [restartedMain] org.eclipse.jetty.server.Server          : jetty-9.4.8.v20171121, build timestamp: 2017-11-21T16:27:37-05:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2018-03-02 21:50:19.219  INFO 12160 --- [restartedMain] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2018-03-02 21:50:19.220  INFO 12160 --- [restartedMain] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2018-03-02 21:50:19.224  INFO 12160 --- [restartedMain] org.eclipse.jetty.server.session         : Scavenging every 600000ms
+2018-03-02 21:50:19.230  INFO 12160 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2018-03-02 21:50:19.231  INFO 12160 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1720 ms
+2018-03-02 21:50:19.418  INFO 12160 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-02 21:50:19.422  INFO 12160 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-02 21:50:19.422  INFO 12160 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-02 21:50:19.422  INFO 12160 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-02 21:50:19.423  INFO 12160 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-02 21:50:19.429  INFO 12160 --- [restartedMain] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@607f7bc2{/,[file:///C:/Users/tmac/AppData/Local/Temp/jetty-docbase.3662446482521771554.8080/],AVAILABLE}
+2018-03-02 21:50:19.430  INFO 12160 --- [restartedMain] org.eclipse.jetty.server.Server          : Started @2843ms
+2018-03-02 21:50:20.159  INFO 12160 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70b279e2: startup date [Fri Mar 02 21:50:17 EST 2018]; root of context hierarchy
+2018-03-02 21:50:20.227  INFO 12160 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String springboot.scala.example.controller.ExampleController.sayHello()
+2018-03-02 21:50:20.229  INFO 12160 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public scala.collection.immutable.Map<java.lang.String, java.lang.Object> springboot.scala.example.controller.ExampleController.example()
+2018-03-02 21:50:20.230  INFO 12160 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tupleDoubleScore],methods=[GET]}" onto public java.lang.Object springboot.scala.example.controller.ExampleController.getTupleDoubleScore()
+2018-03-02 21:50:20.234  INFO 12160 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[GET],produces=[application/json || application/xml]}" onto public springboot.scala.example.api.User springboot.scala.example.controller.UserController.get(java.lang.String)
+2018-03-02 21:50:20.235  INFO 12160 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[PUT || POST],consumes=[application/json || application/xml],produces=[application/json || application/xml]}" onto public java.lang.String springboot.scala.example.controller.UserController.put(springboot.scala.example.api.User)
+2018-03-02 21:50:20.238  INFO 12160 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-02 21:50:20.238  INFO 12160 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-02 21:50:20.276  INFO 12160 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:50:20.276  INFO 12160 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:50:20.333  INFO 12160 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:50:20.573  WARN 12160 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2018-03-02 21:50:20.621  INFO 12160 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-02 21:50:20.639  INFO 12160 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-02 21:50:20.640  INFO 12160 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-02 21:50:20.652  INFO 12160 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2018-03-02 21:50:20.752  INFO 12160 --- [restartedMain] o.e.jetty.server.AbstractConnector       : Stopped ServerConnector@89d699f{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2018-03-02 21:50:20.753  INFO 12160 --- [restartedMain] org.eclipse.jetty.server.session         : Stopped scavenging
+2018-03-02 21:50:20.755  INFO 12160 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2018-03-02 21:50:20.755  INFO 12160 --- [restartedMain] o.e.jetty.server.handler.ContextHandler  : Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@607f7bc2{/,[file:///C:/Users/tmac/AppData/Local/Temp/jetty-docbase.3662446482521771554.8080/],UNAVAILABLE}
+2018-03-02 21:50:20.760  INFO 12160 --- [restartedMain] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-03-02 21:50:20.765 ERROR 12160 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Embedded servlet container failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2018-03-02 21:50:20.767  INFO 12160 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70b279e2: startup date [Fri Mar 02 21:50:17 EST 2018]; root of context hierarchy
+2018-03-02 21:50:20.768  INFO 12160 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-02 21:56:44.547  INFO 10260 --- [restartedMain] springboot.scala.example.ExampleApp$     : Starting ExampleApp. on tmac-win10 with PID 10260 (C:\projects\MyScala\springboot-scala-example\target\classes started by tmac in C:\projects\MyScala\springboot-scala-example)
+2018-03-02 21:56:44.554  INFO 10260 --- [restartedMain] springboot.scala.example.ExampleApp$     : No active profile set, falling back to default profiles: default
+2018-03-02 21:56:44.640  INFO 10260 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70b279e2: startup date [Fri Mar 02 21:56:44 EST 2018]; root of context hierarchy
+2018-03-02 21:56:46.074  INFO 10260 --- [restartedMain] org.eclipse.jetty.util.log               : Logging initialized @2650ms to org.eclipse.jetty.util.log.Slf4jLog
+2018-03-02 21:56:46.305  INFO 10260 --- [restartedMain] e.j.JettyEmbeddedServletContainerFactory : Server initialized with port: 8080
+2018-03-02 21:56:46.309  INFO 10260 --- [restartedMain] org.eclipse.jetty.server.Server          : jetty-9.4.8.v20171121, build timestamp: 2017-11-21T16:27:37-05:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2018-03-02 21:56:46.467  INFO 10260 --- [restartedMain] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2018-03-02 21:56:46.467  INFO 10260 --- [restartedMain] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2018-03-02 21:56:46.473  INFO 10260 --- [restartedMain] org.eclipse.jetty.server.session         : Scavenging every 600000ms
+2018-03-02 21:56:46.480  INFO 10260 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2018-03-02 21:56:46.481  INFO 10260 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1844 ms
+2018-03-02 21:56:46.682  INFO 10260 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-02 21:56:46.685  INFO 10260 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-02 21:56:46.686  INFO 10260 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-02 21:56:46.686  INFO 10260 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-02 21:56:46.686  INFO 10260 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-02 21:56:46.691  INFO 10260 --- [restartedMain] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@509301f9{/,[file:///C:/Users/tmac/AppData/Local/Temp/jetty-docbase.2720388066535437589.8080/],AVAILABLE}
+2018-03-02 21:56:46.691  INFO 10260 --- [restartedMain] org.eclipse.jetty.server.Server          : Started @3269ms
+2018-03-02 21:56:47.392  INFO 10260 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70b279e2: startup date [Fri Mar 02 21:56:44 EST 2018]; root of context hierarchy
+2018-03-02 21:56:47.477  INFO 10260 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tupleDoubleScore],methods=[GET]}" onto public java.lang.Object springboot.scala.example.controller.ExampleController.getTupleDoubleScore()
+2018-03-02 21:56:47.478  INFO 10260 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String springboot.scala.example.controller.ExampleController.sayHello()
+2018-03-02 21:56:47.479  INFO 10260 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public scala.collection.immutable.Map<java.lang.String, java.lang.Object> springboot.scala.example.controller.ExampleController.example()
+2018-03-02 21:56:47.482  INFO 10260 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[GET],produces=[application/json || application/xml]}" onto public springboot.scala.example.api.User springboot.scala.example.controller.UserController.get(java.lang.String)
+2018-03-02 21:56:47.483  INFO 10260 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[PUT || POST],consumes=[application/json || application/xml],produces=[application/json || application/xml]}" onto public java.lang.String springboot.scala.example.controller.UserController.put(springboot.scala.example.api.User)
+2018-03-02 21:56:47.489  INFO 10260 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-02 21:56:47.489  INFO 10260 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-02 21:56:47.529  INFO 10260 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:56:47.529  INFO 10260 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:56:47.583  INFO 10260 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:56:47.988  INFO 10260 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-02 21:56:48.052  INFO 10260 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-02 21:56:48.084  INFO 10260 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-02 21:56:48.086  INFO 10260 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-02 21:56:48.113  INFO 10260 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2018-03-02 21:56:48.324  INFO 10260 --- [restartedMain] o.e.jetty.server.AbstractConnector       : Started ServerConnector@279c096a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2018-03-02 21:56:48.335  INFO 10260 --- [restartedMain] .s.b.c.e.j.JettyEmbeddedServletContainer : Jetty started on port(s) 8080 (http/1.1)
+2018-03-02 21:56:48.359  INFO 10260 --- [restartedMain] springboot.scala.example.ExampleApp$     : Started ExampleApp. in 4.104 seconds (JVM running for 4.937)
+2018-03-02 21:57:39.276  INFO 10260 --- [Thread-15] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70b279e2: startup date [Fri Mar 02 21:56:44 EST 2018]; root of context hierarchy
+2018-03-02 21:57:39.308  INFO 10260 --- [Thread-15] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-02 21:57:39.409  INFO 10260 --- [Thread-15] o.e.jetty.server.AbstractConnector       : Stopped ServerConnector@279c096a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2018-03-02 21:57:39.413  INFO 10260 --- [Thread-15] org.eclipse.jetty.server.session         : Stopped scavenging
+2018-03-02 21:57:39.416  INFO 10260 --- [Thread-15] o.e.j.s.h.ContextHandler.application     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2018-03-02 21:57:39.418  INFO 10260 --- [Thread-15] o.e.jetty.server.handler.ContextHandler  : Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@509301f9{/,[file:///C:/Users/tmac/AppData/Local/Temp/jetty-docbase.2720388066535437589.8080/],UNAVAILABLE}
+2018-03-02 21:57:39.839  INFO 10260 --- [restartedMain] springboot.scala.example.ExampleApp$     : Starting ExampleApp. on tmac-win10 with PID 10260 (C:\projects\MyScala\springboot-scala-example\target\classes started by tmac in C:\projects\MyScala\springboot-scala-example)
+2018-03-02 21:57:39.839  INFO 10260 --- [restartedMain] springboot.scala.example.ExampleApp$     : No active profile set, falling back to default profiles: default
+2018-03-02 21:57:39.843  INFO 10260 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@76ae4100: startup date [Fri Mar 02 21:57:39 EST 2018]; root of context hierarchy
+2018-03-02 21:57:40.743  INFO 10260 --- [restartedMain] e.j.JettyEmbeddedServletContainerFactory : Server initialized with port: 8080
+2018-03-02 21:57:40.758  INFO 10260 --- [restartedMain] org.eclipse.jetty.server.Server          : jetty-9.4.8.v20171121, build timestamp: 2017-11-21T16:27:37-05:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2018-03-02 21:57:40.764  INFO 10260 --- [restartedMain] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2018-03-02 21:57:40.765  INFO 10260 --- [restartedMain] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2018-03-02 21:57:40.765  INFO 10260 --- [restartedMain] org.eclipse.jetty.server.session         : Scavenging every 600000ms
+2018-03-02 21:57:40.766  INFO 10260 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2018-03-02 21:57:40.767  INFO 10260 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 924 ms
+2018-03-02 21:57:40.860  INFO 10260 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-02 21:57:40.860  INFO 10260 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-02 21:57:40.861  INFO 10260 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-02 21:57:40.862  INFO 10260 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-02 21:57:40.863  INFO 10260 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-02 21:57:40.865  INFO 10260 --- [restartedMain] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@5e93335a{/,[file:///C:/Users/tmac/AppData/Local/Temp/jetty-docbase.7586197336051607325.8080/],AVAILABLE}
+2018-03-02 21:57:40.917  INFO 10260 --- [restartedMain] org.eclipse.jetty.server.Server          : Started @57495ms
+2018-03-02 21:57:41.237  INFO 10260 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@76ae4100: startup date [Fri Mar 02 21:57:39 EST 2018]; root of context hierarchy
+2018-03-02 21:57:41.244  INFO 10260 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tupleDoubleScore],methods=[GET]}" onto public java.lang.Object springboot.scala.example.controller.ExampleController.getTupleDoubleScore()
+2018-03-02 21:57:41.244  INFO 10260 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String springboot.scala.example.controller.ExampleController.sayHello()
+2018-03-02 21:57:41.244  INFO 10260 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public scala.collection.immutable.Map<java.lang.String, java.lang.Object> springboot.scala.example.controller.ExampleController.example()
+2018-03-02 21:57:41.245  INFO 10260 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[GET],produces=[application/json || application/xml]}" onto public springboot.scala.example.api.User springboot.scala.example.controller.UserController.get(java.lang.String)
+2018-03-02 21:57:41.246  INFO 10260 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[PUT || POST],consumes=[application/json || application/xml],produces=[application/json || application/xml]}" onto public java.lang.String springboot.scala.example.controller.UserController.put(springboot.scala.example.api.User)
+2018-03-02 21:57:41.249  INFO 10260 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-02 21:57:41.251  INFO 10260 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-02 21:57:41.279  INFO 10260 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:57:41.280  INFO 10260 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:57:41.312  INFO 10260 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-02 21:57:41.396  INFO 10260 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-02 21:57:41.450  INFO 10260 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-02 21:57:41.596  INFO 10260 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-02 21:57:41.597  INFO 10260 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-02 21:57:41.641  INFO 10260 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2018-03-02 21:57:41.685  INFO 10260 --- [restartedMain] o.e.jetty.server.AbstractConnector       : Started ServerConnector@2fcec492{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2018-03-02 21:57:41.685  INFO 10260 --- [restartedMain] .s.b.c.e.j.JettyEmbeddedServletContainer : Jetty started on port(s) 8080 (http/1.1)
+2018-03-02 21:57:41.687  INFO 10260 --- [restartedMain] springboot.scala.example.ExampleApp$     : Started ExampleApp. in 1.925 seconds (JVM running for 58.264)
