@@ -30,6 +30,7 @@ object GroupByExample extends App {
   val highestPricedSportsCars = sportsCars.sortBy(x => x.price).last
   println("highest priced sports car is " + highestPricedSportsCars)
 
+  // Sortby desc
   val cheapestSportsCars = sportsCars.sortBy(x => -x.price).last
   println("cheapestSportsCars priced sports car is " + cheapestSportsCars)
 
